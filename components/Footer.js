@@ -5,6 +5,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+
+import { facebook, twitter, instagram, linkedin } from "../site.config";
 export default function Navbar() {
   return (
     <Fragment>
@@ -31,22 +33,22 @@ export default function Navbar() {
 const soocialMedia = [
   {
     name: "Facebook",
-    url: "https://facebook.com/",
+    url: facebook,
     icon: <FaFacebook size="25px" />,
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/",
+    url: twitter,
     icon: <FaTwitter size="25px" />,
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/",
+    url: instagram,
     icon: <FaInstagram size="25px" />,
   },
   {
     name: "Linkedin",
-    url: "https://linkedin.com/",
+    url: linkedin,
     icon: <FaLinkedinIn size="25px" />,
   },
 ];

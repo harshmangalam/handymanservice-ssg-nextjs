@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import { siteTitle } from "../site.config";
 
 export default function Home() {
   return (
@@ -13,12 +14,12 @@ export default function Home() {
         <div className="w-full h-96 shadow-2xl overflow-hidden relative">
           <img
             src="/1.jpg"
-            alt="HandymanServiceU"
+            alt={siteTitle}
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gray-900 bg-opacity-75"></div>
           <div className="h-full flex items-center justify-center relative">
-            <h1 class="text-4xl lg:text-6xl font-bold text-center">
+            <h1 className="text-4xl lg:text-6xl font-bold text-center">
               Always on Time, Reliable and Trustworthy
             </h1>
           </div>
@@ -32,7 +33,7 @@ export default function Home() {
 
       <section className="flex-col lg:space-x-6 lg:flex-row flex items-center justify-between container m-auto my-10 shadow-2xl p-10">
         <div>
-          <img src="/2.png" className="w-full h-96" />
+          <img src="/2.png" className="w-full h-96" alt="Service" />
         </div>
 
         <div className="flex items-center justify-center flex-col space-y-4  text-justify">
